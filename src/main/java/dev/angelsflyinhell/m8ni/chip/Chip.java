@@ -3,7 +3,6 @@ package dev.angelsflyinhell.m8ni.chip;
 import dev.angelsflyinhell.m8ni.chip.utils.Console;
 import dev.angelsflyinhell.m8ni.chip.utils.Handler;
 
-import java.util.Arrays;
 import java.util.HashMap;
 
 public class Chip {
@@ -44,26 +43,26 @@ public class Chip {
             String[] args = Handler.getArgs(cmd);
 
             switch (Handler.split(cmd)[0]) {
-                case "INC" -> {
+                case "INC":
                     int base = data.get(Integer.parseInt(args[0]));
                     base = base + 1;
                     data.put(Integer.valueOf(args[0]), base);
-                }
-                case "DEC" -> {
-                    int base = data.get(Integer.parseInt(args[0]));
+                    break;
+                case "DEC":
+                    base = data.get(Integer.parseInt(args[0]));
                     base = base - 1;
                     data.put(Integer.valueOf(args[0]), base);
-                }
-                case "JUMP" -> {
+                    break;
+                case "JUMP":
                     i = Integer.parseInt(args[0]) - 2;
-                }
-                case "STOP" -> {
+                    break;
+                case "STOP":
                     i = script.size() + 1;
-                }
-                case "IS_ZERO" -> {
-                    if(data.get(Integer.parseInt(args[0])) == 0)
+                break;
+                case "IS_ZERO":
+                    if (data.get(Integer.parseInt(args[0])) == 0)
                         i = Integer.parseInt(args[1]) - 2;
-                }
+                break;
             }
             iteration++;
             Console.printI(iteration, cmd, data);
