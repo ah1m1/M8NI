@@ -14,3 +14,6 @@ Example: ```M8NI/>./my-script.m8 8```
 
 # Installation
 Simply go to [Releases](https://github.com/ah1m1/M8NI/releases) and download the newest build.
+
+![Command Usage](https://raw.githubusercontent.com/ah1m1/M8NI/main/img/exec.png)
+![Display](https://raw.githubusercontent.com/ah1m1/M8NI/main/img/done.png)
