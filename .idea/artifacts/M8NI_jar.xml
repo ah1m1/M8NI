@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="M8NI:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/M8NI_jar</output-path>
+    <root id="archive" name="M8NI.jar">
+      <element id="module-output" name="M8NI" />
+    </root>
+  </artifact>
+</component>
