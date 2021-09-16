@@ -1,0 +1,46 @@
+INC 1
+INC 1
+INC 1
+INC 1
+INC 1
+INC 1
+INC 2
+INC 2
+INC 2
+INC 15
+IS_ZERO 1 16
+DEC 1
+INC 4
+INC 5
+JUMP 11
+IS_ZERO 2 21
+DEC 2 
+INC 6
+INC 7
+JUMP 16
+IS_ZERO 4 36
+IS_ZERO 6 27
+DEC 4
+DEC 6
+INC 14
+JUMP 22
+IS_ZERO 7 31
+INC 2
+INC 6
+DEC 7 
+JUMP 26
+IS_ZERO 2 35
+INC 7
+DEC 2
+JUMP 41
+JUMP 21
+STOP
+
+i = 6
+g;
+for i >= 0 {
+    i - 3 //1. i=3, 2. i=0
+    g + 1;
+}
+
+//g = 2; i = 0;
