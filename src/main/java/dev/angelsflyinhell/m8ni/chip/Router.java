@@ -1,0 +1,23 @@
+package dev.angelsflyinhell.m8ni.chip;
+
+import dev.angelsflyinhell.m8ni.chip.utils.Dataset;
+import dev.angelsflyinhell.m8ni.chip.utils.SysIO;
+
+import java.io.IOException;
+
+public class Router {
+
+    public static void defaultRouter(String in) {
+        String[] args = in.split(" ");
+        String path = "./scripts/testing.m8";
+        int bits = 16;
+        try {
+            Chip m8ni = new Chip(SysIO.getInstructionMap(args[0]), Dataset.createDataset(Integer.parseInt(args[1])));
+            m8ni.setBitSize(16);
+            m8ni.run();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+}
