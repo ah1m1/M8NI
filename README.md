@@ -5,6 +5,7 @@ Script-Parser for low-level, bit-limited programming.
 # Usage
 Start the app using `start.bat` or a shell file of your choice.
 Do not start the `.jar` file directly (It won't do anything).
+Memory pre-definitions cannot be made upfront, so you'll have to use `INC` and `DEC` before executing your initial script.
 
 ### Main Window Usage
 Syntax:  ```M8NI/><FILE LOCATION> <BIT SIZE>```
