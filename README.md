@@ -1,5 +1,5 @@
 # M8NI
-Script-Parser for low-level, bit-limited programming.
+Interpreter for a small, asm-type scripting language.
 
 ---
 # Usage
